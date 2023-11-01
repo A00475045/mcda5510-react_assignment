@@ -15,7 +15,8 @@ const converter = (temp, to) => {
 
 const url = (lat, lon) => {
 
-    return `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=a256f84b5a84a1431164d0ed7eab26ab`
+    return `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=26b4959d10ced82bf78e20eb6fa57294`
+    // return `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=a256f84b5a84a1431164d0ed7eab26ab`
 }
 
 const MyCity = () => {
