@@ -191,5 +191,6 @@
     background-color: var(--inverse-color);
     padding: 5px;
     border-radius: 6px;
+    cursor: pointer;
 
 }
