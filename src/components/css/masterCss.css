@@ -1,0 +1,195 @@
+:root {
+    --background-color: whitesmoke;
+    --inverse-color: #0A0A0A;
+    --grey-shade: #D3D3D3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+    min-height: 9vh;
+    max-height: 14vh;
+
+
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 28vw;
+}
+
+.name-header-container {
+    text-wrap: wrap;
+    width: 19vw;
+    display: block;
+    margin: 0 6vw;
+    max-height: 48px;
+}
+
+.nav-element a {
+    color: var(--inverse-color);
+    text-decoration: none;
+    font-style: unset;
+    font-size: 12px;
+    font-weight: 450;
+}
+
+.active::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 0.5px;
+    width: 100%;
+    background: var(--grey-shade);
+    transition: width .5s ease;
+    animation: ss 0.3s;
+}
+
+/* .active:hover:after {
+	width: 100%;
+	background: blue;
+} */
+/*     
+    border-bottom: 0.5px solid var(--grey-shade);
+    /* border-len */
+/*animation: ss 1s;
+
+    transition: transform 1s linear; */
+/* } */
+
+@keyframes ss {
+    from {
+        width: 0;
+        /* transform: translateX(-10px); */
+    }
+
+    to {
+        width: 100%;
+        /* transform: translateX(0px); */
+    }
+}
+
+.name-header {
+    color: var(--inverse-color);
+    font-size: 19px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.outlet {
+    background-color: #fcfcfc;
+    min-height: 80vh;
+    max-height: 80vh;
+}
+
+.footer {
+    background-color: var(--inverse-color);
+    color: var(--background-color);
+    min-height: 11vh;
+    font-size: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 4px;
+}
+
+.aboutme-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: inherit;
+    background-color: rgb(251, 251, 251);
+}
+
+.photo-container {
+    min-height: 46vh;
+    max-height: 46vh;
+    min-width: 46vh;
+    transform: translateX(-10vw);
+    background: url('~.\\..\\src\\public\\profile-photo.jpeg');
+    background-size: 100% 100%;
+    /* Ensures the image covers the entire container */
+    background-repeat: no-repeat;
+}
+
+.profile-photo {
+    width: 46vh !important;
+    height: 46vh !important;
+    border-radius: 125px;
+    /* display: none; */
+}
+
+.photo-cover {
+    min-height: 46vh;
+    min-width: 46.4vh;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: -1px;
+    animation: make-picture-round 2.5s;
+    background-color: rgba(251, 251, 251, 1);
+
+}
+
+.temp {
+    cursor: pointer;
+}
+
+
+@keyframes make-picture-round {
+    from {
+        background-color: rgba(251, 251, 251, 0.1);
+
+    }
+
+    to {
+        background-color: rgba(251, 251, 251, 1);
+    }
+}
+
+/* .para-container {}
+ */
+.city-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: inherit;
+    /* background-color: khaki; */
+}
+
+.city-picture {
+    width: 76vh;
+    /* height: 40vh; */
+}
+
+.about-city {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 50vh;
+    /* background-color: lawngreen; */
+}
+
+.para {
+    width: 30vw;
+}
+
+.change-to {
+    border: none;
+    color: var(--background-color);
+    background-color: var(--inverse-color);
+    padding: 5px;
+    border-radius: 6px;
+
+}
