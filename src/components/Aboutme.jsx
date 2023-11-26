@@ -5,7 +5,7 @@ const Aboutme = () => {
         <div className="outlet">
             <div className="aboutme-container">
                 <div className="photo-container">
-                    <img className="profile-photo" src={profilePhoto} alt="Profile picture for Ranjit" />
+                    <img className="profile-photo" src={profilePhoto} alt="Profile pic for Ranjit" />
                     <span className="photo-cover"></span>
                 </div>
                 <div className="para-container" style={{ width: "30vw" }}>
