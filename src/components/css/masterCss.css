@@ -116,7 +116,7 @@
     max-height: 46vh;
     min-width: 46vh;
     transform: translateX(-10vw);
-    background: url('~.\\..\\src\\public\\profile-photo.jpeg');
+    background: url('..\\src\\public\\profile-photo.jpeg');
     background-size: 100% 100%;
     /* Ensures the image covers the entire container */
     background-repeat: no-repeat;
