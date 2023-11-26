@@ -9,7 +9,7 @@ const Layout = () => {
 
     return (<>
         <header className="header">
-            <span className="name-header-container"><p className="name-header">Ranjit Pandey, This is DEV</p></span>
+            <span className="name-header-container"><p className="name-header">This is DEV</p></span>
             <nav className={"nav-container"}>
                 <span className={`nav-element${(activeTab === 'A') ? " active" : ""}`} onClick={() => setActiveTab('A')}><Link to="/" >About me </Link></span>
                 <span className={`nav-element${(activeTab === 'M') ? " active" : ""}`} onClick={() => setActiveTab('M')}><Link to="/mycity" >My City </Link></span>
