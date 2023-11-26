@@ -11,8 +11,8 @@ const Layout = () => {
         <header className="header">
             <span className="name-header-container"><p className="name-header">Ranjit Pandey, This is QA</p></span>
             <nav className={"nav-container"}>
-                <span className={`nav-element${(activeTab == 'A') ? " active" : ""}`} onClick={() => setActiveTab('A')}><Link to="/" >About me </Link></span>
-                <span className={`nav-element${(activeTab == 'M') ? " active" : ""}`} onClick={() => setActiveTab('M')}><Link to="/mycity" >My City </Link></span>
+                <span className={`nav-element${(activeTab === 'A') ? " active" : ""}`} onClick={() => setActiveTab('A')}><Link to="/" >About me </Link></span>
+                <span className={`nav-element${(activeTab === 'M') ? " active" : ""}`} onClick={() => setActiveTab('M')}><Link to="/mycity" >My City </Link></span>
                 {/* <span className={`nav-element${(activeTab == 'C') ? " active" : ""}`} onClick={() => setActiveTab('C')}><Link to="/contactme" >Contact me </Link></span> */}
             </nav>
         </header>
